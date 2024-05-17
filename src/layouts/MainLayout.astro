@@ -1,0 +1,18 @@
+---
+// Components
+import MainHead from "./MainHead.astro";
+import Navbar from "../components/navbar.astro"
+// Styles
+import "../styles/styles.css"
+
+// Astro Props
+const {title = "PlaceHolderHere's Website", description = "PlaceHolderhere's Coding Portfolio", buttons
+} = Astro.props
+---
+<html lang="en">
+	<MainHead title={title} description={description}/>
+    <body class="bg-page-color">
+		<Navbar />
+		<slot />
+	</body>
+</html>
