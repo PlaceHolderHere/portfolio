@@ -2,7 +2,7 @@
 const {title = "PlaceHolderHere's Website", navbarButtons = [["Home", "/"], , ["Blogs", "/blogs"], ["About", "/About"], ["Contact Us", "Contact-Us"]]} = Astro.props //[[Button Text, Button Link]]
 ---
 
-<div class="flex bg-accent-color min-w-full min-h-20 items-center justify-between fixed top-0">
+<div class="flex bg-accent-color min-w-full min-h-20 items-center justify-between fixed top-0 shadow-3xl">
     <h1 class="text-white text-xl p-1 m-6">{title}</h1>
     <div class="buttons flex justify-end items-center">
         {
@@ -12,11 +12,11 @@ const {title = "PlaceHolderHere's Website", navbarButtons = [["Home", "/"], , ["
         }
     </div>
 </div>
-<br class="my-10"/>
+<br class="my-7"/>
 
 
 <style>
     .button{
-        @apply bg-white inline-block p-2 my-2 mr-6 rounded-md text-right hover:bg-blue-100 hover:cursor-pointer
+        @apply text-white bg-button-color inline-block p-2 my-2 mr-6 rounded-md text-right hover:bg-button-hover-color hover:cursor-pointer
     }
 </style>

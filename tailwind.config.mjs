@@ -6,9 +6,9 @@ export default {
 			colors: {
 				'page-color': '#E8EBFF',
 				'dominant-color': '#6A67CE',
-				'compliment-color': '#B0ADE4',
 				'accent-color': '#2C3E50',
 				'button-color': '#6DBAA1',	
+				'button-hover-color': '#67ceb5',
 			}
 		},
 	},
