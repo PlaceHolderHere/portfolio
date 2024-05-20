@@ -3,16 +3,49 @@ import MainLayout from "../layouts/MainLayout.astro"
 ---
 
 <MainLayout>
-    <div class="bg-dominant-color text-white shadow-3xl flex">
+    <div class="bg-dominant-color text-white shadow-3xl flex justify-center items-center w-screen px-24">
             <img src="pfp.jpg" class="p-1 m-4 shadow-3xl rounded-full" width="25%" height="25%">
-            <div class="">
-                <h1>Welcome to</h1>
-                <h1 class="text-7xl">My <span class="text-button-color font-bold">Website!</span></h1>
+            <div class="text-right ">
+                <h1 class="text-7xl">Hi!</h1>
+                <h1>I'm PlaceHolderHere</h1>
+                <h5 class="text-black">A Python and Web Developer</h5>
+                <br/>
             </div>
     </div>
     <br />
-    <div class="flex justify-center">
-        <h2>Who am I?</h2>
-        
+    <div class="px-24 shadow-3xl ">
+        <h2 class="text-center">Who am I?</h2>
+        <h3 class="text-justify font-light">&nbsp;&nbsp;&nbsp;&nbsp;I’m PlaceHolderHere and I think codings neat! Im currently exploring the magic of how coding works. I’ve mostly tried Python and Javascript. Right now im navigating through web development using Astro and React but I’m open to trying new things.</h3>
+        <div class="tools my-12 flex items-center justify-center">
+            <h3>My Tools: </h3>
+            <div class="bg-dominant-color w-16 h-16 rounded-3xl mx-1"></div>
+            <div class="bg-dominant-color w-16 h-16 rounded-3xl mx-1"></div>
+            <div class="bg-dominant-color w-16 h-16 rounded-3xl mx-1"></div>
+            <div class="bg-dominant-color w-16 h-16 rounded-3xl mx-1"></div>
+            <div class="bg-dominant-color w-16 h-16 rounded-3xl mx-1"></div>
+            <div class="bg-dominant-color w-16 h-16 rounded-3xl mx-1"></div>
+            <div class="bg-dominant-color w-16 h-16 rounded-3xl mx-1"></div>
+            <div class="bg-dominant-color w-16 h-16 rounded-3xl mx-1"></div>
+            <div class="bg-dominant-color w-16 h-16 rounded-3xl mx-1"></div>
+            <div class="bg-dominant-color w-16 h-16 rounded-3xl mx-1"></div>
+        </div>
+    </div>
+
+    <div class="bg-dominant-color text-white shadow-3xl w-screen p-4 text-center">
+        <h1 class="text-7xl">Projects</h1>
+        <h5 class="text-black">See something you like?</h5>
+        <a class="rounded-xl bg-button-color shadow-2xl p-2 m-8 text-xl font-semibold text-black hover:bg-button-hover-color hover:cursor-pointer">Contact Me!</a>
+        <div class="grid grid-cols-2">
+            <div class="flex justify-center h-full">
+                <div class="rounded-3xl mx-2 bg-accent-color w-80 h-80 m-4 flex items-center justify-center">
+                    <h1>HI</h1>
+                </div>
+            </div>
+            <div class="flex justify-center mt-48">
+                <div class="rounded-3xl mx-2 bg-accent-color w-80 h-80 m-4 flex items-center justify-center">
+                    <h2>Awooga</h2>
+                </div>
+            </div>
+        </div>
     </div>
 </MainLayout>

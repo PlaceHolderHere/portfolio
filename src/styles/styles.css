@@ -17,3 +17,7 @@ h3{
 h4{
     @apply text-2xl font-semibold m-4 p-2
 }
+
+h5{
+    @apply text-xl font-semibold m-4 p-2
+}
