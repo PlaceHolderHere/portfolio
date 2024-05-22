@@ -2,10 +2,10 @@
 import MainLayout from "../layouts/MainLayout.astro"
 ---
 
-<MainLayout>
-    <div class="bg-dominant-color text-white shadow-3xl flex justify-center items-center w-screen px-24">
+<MainLayout buttons={[["Home", "/"], ["Projects", "#projects"], ["Contacts", "/contacts"]]}>
+    <div class="bg-dominant-color text-white shadow-3xl flex justify-center items-center w-screen px-20 pt-20">
         <br class="my-36"/>
-            <img src="pfp.jpg" class="p-1 m-4 shadow-3xl rounded-full" width="25%" height="25%">
+            <img src="pfp.jpg" class="p-2 m-4 shadow-3xl rounded-full w-1/3 h-1/3 aspect-square">
             <div class="text-right">
                 <h1 class="text-7xl">Hi!</h1>
                 <h1>I'm PlaceHolderHere</h1>
@@ -36,24 +36,25 @@ import MainLayout from "../layouts/MainLayout.astro"
         <h1 class="text-7xl">Projects</h1>
         <h5 class="text-black">See something you like?</h5>
         <a class="rounded-xl bg-button-color shadow-2xl p-2 m-8 text-xl font-semibold text-black hover:bg-button-hover-color hover:cursor-pointer">Contact Me!</a>
-        <br class="mb-10"/>
+        <br id="projects" class="mb-10"/>
     </div>
     <div class="flex max-md:flex-col md:flex-row justify-evenly text-white">
         <div class="flex flex-col justify-center md:w-1/2">
-            <div class="bg-accent-color flex items-center justify-center aspect-video">
-                <h1>Project 1</h1>
-            </div>
-            <div class="bg-button-color flex items-center justify-center aspect-video">
+            <a href="Projects/space-invaders" class="bg-accent-color flex items-center justify-center aspect-square hover:cursor-pointer">
+                <img src="space-invaders.png" class="flex-grow aspect-square opacity-50 hover:opacity-80">
+                <h1 class="absolute">Space Invaders</h1>
+            </a>
+            <a class="bg-button-color flex items-center justify-center aspect-square">
                 <h1>Project 3</h1>
-            </div>
+            </a>
         </div>
         <div class="flex flex-col justify-center md:w-1/2">
-            <div class="bg-button-color flex items-center justify-center aspect-video">
+            <a class="bg-button-color flex items-center justify-center aspect-square">
                 <h1>Project 2</h1>
-            </div>
-            <div class="bg-accent-color flex items-center justify-center aspect-video">
+            </a>
+            <a class="bg-accent-color flex items-center justify-center aspect-square">
                 <h1>Project 4</h1>
-            </div>
+            </a>
         </div>
     </div>
 </MainLayout>
