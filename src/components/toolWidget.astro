@@ -1,0 +1,10 @@
+---
+const {tooltipTitle, logoSrc} = Astro.props
+---
+
+<div class="relative group bg-accent-color w-16 h-16 rounded-3xl mx-1 my-2 p-2 hover:-translate-y-2 duration-300 ease-out">
+    <img src={logoSrc}>
+    <div class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 hidden group-hover:block p-2 bg-accent-color text-white text-sm rounded shadow-lg">
+        {tooltipTitle}
+    </div>
+</div>
