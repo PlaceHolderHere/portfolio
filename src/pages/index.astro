@@ -2,21 +2,33 @@
 import MainLayout from "../layouts/MainLayout.astro"
 import ToolDisplay from "../components/toolWidget.astro"
 import Footer from "../components/footer.astro"
----
 
+---
 <MainLayout buttons={[["Home", "/"], ["Projects", "#projects"], ["Contacts", "#contacts"]]}>
-    <div id="home" class="bg-dominant-color text-white shadow-3xl flex max-lg:flex-col justify-center items-center w-screen px-20 pt-10 lg:pt-20">
+    
+	<style>
+        .hide {
+          opacity: 0;
+        }
+        .visible {
+          opacity: 1;
+          transition: all 1s ease-in-out;
+        }
+      </style>
+    <script src="/intersectionObersver.js" defer></script>
+
+    <div id="home" class="animateOnLoad hide bg-dominant-color text-white shadow-3xl flex max-lg:flex-col justify-center items-center w-screen px-20 pt-10 lg:pt-20">
         <br class="my-10 lg:my-36"/>
-            <img src="pfp.jpg" class="p-2 m-4 shadow-3xl rounded-full w-1/2 aspect-square">
-            <div class="text-center lg:text-right">
-                <h1>Hi! I'm</h1>
-                <h1 class="text-5xl md:text-6xl"> PlaceHolderHere</h1>
-                <h5 class="text-black">A Python and Web Developer</h5>
-                <br/>
-            </div>
+        <img src="pfp.jpg" class="p-2 m-4 shadow-3xl rounded-full w-1/2 aspect-square">
+        <div class="text-center lg:text-right">
+            <h1>Hi! I'm</h1>
+            <h1 class="text-5xl md:text-6xl"> PlaceHolderHere</h1>
+            <h5 class="text-black">A Python and Web Developer</h5>
+            <br/>
+        </div>
     </div>
     <br id="about"/>
-    <div class="px-24 shadow-3xl ">
+    <div class="px-24 shadow-3xl">
         <h2 class="text-center">Who am I?</h2>
         <h3 class="text-justify font-light">&nbsp;&nbsp;&nbsp;&nbsp;I’m PlaceHolderHere and I think codings neat! Im currently exploring the magic of how coding works. I’ve mostly tried Python and Javascript. Right now im navigating through web development using Astro and React but I’m open to trying new things.</h3>
         <div class="tools my-12 flex flex-wrap items-center justify-center">
@@ -32,7 +44,6 @@ import Footer from "../components/footer.astro"
             <ToolDisplay tooltipTitle="MySQL" logoSrc="/src/logos/mysql.png"/>
         </div>
     </div>
-
     <div class="bg-dominant-color text-white shadow-3xl w-screen p-4 text-center">
         <h1 id="projects" class="text-7xl">Projects</h1>
         <h5 class="text-black">See something you like?</h5>
