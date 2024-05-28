@@ -9,6 +9,7 @@ export default {
 				'accent-color': '#2C3E50',
 				'button-color': '#6DBAA1',	
 				'button-hover-color': '#67ceb5',
+				'footer-color': '#D7DAEE',
 			}
 		},
 	},
